@@ -13,6 +13,6 @@ categoryItems.forEach(function (item) {
 
   var itemCount = listItems.length;
 
-  console.log("Header: " + header.textContent);
+  console.log("Category: " + header.textContent);
   console.log("Elements: " + itemCount);
 });
