@@ -16,7 +16,6 @@ const images = [
 var galleryList = document.querySelector(".gallery");
 
 var galleryContent = images.map(function (image) {
-  
   var imgElement = `<img src="${image.url}" alt="${image.alt}">`;
 
   var listItem = `<li>${imgElement}</li>`;
