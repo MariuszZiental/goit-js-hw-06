@@ -4,12 +4,12 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 // Pobranie elementów z HTML
-var changeColorButton = document.querySelector(".change-color");
-var colorSpan = document.querySelector(".color");
+const changeColorButton = document.querySelector(".change-color");
+const colorSpan = document.querySelector(".color");
 
 // Obsługa zdarzenia click na przycisku
 changeColorButton.addEventListener("click", function () {
-  var randomColor = getRandomHexColor();
+  const randomColor = getRandomHexColor();
 
   // Zmiana koloru tła body
   document.body.style.backgroundColor = randomColor;

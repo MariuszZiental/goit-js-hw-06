@@ -1,10 +1,10 @@
 // Pobranie elementów z HTML
-var nameInput = document.getElementById("name-input");
-var nameOutput = document.getElementById("name-output");
+const nameInput = document.getElementById("name-input");
+const nameOutput = document.getElementById("name-output");
 
 // Funkcja aktualizująca zawartość spana na podstawie wartości pola input
 function updateNameOutput() {
-  var inputValue = nameInput.value;
+  const inputValue = nameInput.value;
   nameOutput.textContent = inputValue ? inputValue : "Anonymous";
 }
 

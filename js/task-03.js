@@ -13,16 +13,16 @@ const images = [
   },
 ];
 
-var galleryList = document.querySelector(".gallery");
+const galleryList = document.querySelector(".gallery");
 
-var galleryContent = images.map(function (image) {
-  var imgElement = `<img src="${image.url}" alt="${image.alt}">`;
+const galleryContent = images.map(function (image) {
+  const imgElement = `<img src="${image.url}" alt="${image.alt}">`;
 
-  var listItem = `<li>${imgElement}</li>`;
+  const listItem = `<li>${imgElement}</li>`;
 
   return listItem;
 });
 
-var galleryHTML = galleryContent.join("");
+const galleryHTML = galleryContent.join("");
 
 galleryList.insertAdjacentHTML("beforeend", galleryHTML);

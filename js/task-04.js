@@ -1,9 +1,9 @@
-var decrementButton = document.querySelector('[data-action="decrement"]');
-var incrementButton = document.querySelector('[data-action="increment"]');
-var counterValueElement = document.getElementById("value");
+const decrementButton = document.querySelector('[data-action="decrement"]');
+const incrementButton = document.querySelector('[data-action="increment"]');
+const counterValueElement = document.getElementById("value");
 
 // Inicjalizacja wartości licznika
-var counterValue = 0;
+const counterValue = 0;
 
 // Aktualizacja interfejsu wartości licznika
 function updateCounterValue() {

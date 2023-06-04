@@ -1,8 +1,8 @@
 // Pobranie elementów z HTML
-var input = document.querySelector('input[type="number"]');
-var createButton = document.querySelector("button[data-create]");
-var destroyButton = document.querySelector("button[data-destroy]");
-var boxesContainer = document.getElementById("boxes");
+const input = document.querySelector('input[type="number"]');
+const createButton = document.querySelector("button[data-create]");
+const destroyButton = document.querySelector("button[data-destroy]");
+const boxesContainer = document.getElementById("boxes");
 
 // Funkcja do generowania losowego koloru w formacie HEX
 function getRandomHexColor() {
@@ -16,10 +16,10 @@ function createBoxes(amount) {
   // Usunięcie istniejących elementów
   destroyBoxes();
 
-  var size = 30;
+  const size = 30;
 
-  for (var i = 0; i < amount; i++) {
-    var box = document.createElement("div");
+  for (const i = 0; i < amount; i++) {
+    const box = document.createElement("div");
     box.style.backgroundColor = getRandomHexColor();
     box.style.width = size + "px";
     box.style.height = size + "px";
@@ -35,7 +35,7 @@ function destroyBoxes() {
 
 // Obsługa zdarzenia click na przycisku Utwórz
 createButton.addEventListener("click", function () {
-  var amount = input.value;
+  const amount = input.value;
   createBoxes(amount);
 });
 

@@ -1,17 +1,17 @@
-var categoriesList = document.querySelector("#categories");
+const categoriesList = document.querySelector("#categories");
 
-var categoryItems = categoriesList.querySelectorAll("li.item");
+const categoryItems = categoriesList.querySelectorAll("li.item");
 
-var categoryCount = categoryItems.length;
+const categoryCount = categoryItems.length;
 
 console.log("Number of categories: " + categoryCount);
 
 categoryItems.forEach(function (item) {
-  var header = item.querySelector("h2");
+  const header = item.querySelector("h2");
 
-  var listItems = item.querySelectorAll("ul li");
+  const listItems = item.querySelectorAll("ul li");
 
-  var itemCount = listItems.length;
+  const itemCount = listItems.length;
 
   console.log("Category: " + header.textContent);
   console.log("Elements: " + itemCount);

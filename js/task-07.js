@@ -1,10 +1,10 @@
 // Pobranie elementów z HTML
-var fontSizeControl = document.getElementById("font-size-control");
-var textSpan = document.getElementById("text");
+const fontSizeControl = document.getElementById("font-size-control");
+const textSpan = document.getElementById("text");
 
 // Funkcja aktualizująca rozmiar tekstu
 function updateFontSize() {
-  var fontSize = fontSizeControl.value + "px";
+  const fontSize = fontSizeControl.value + "px";
   textSpan.style.fontSize = fontSize;
 }
 

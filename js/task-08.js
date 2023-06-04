@@ -1,19 +1,19 @@
 // Pobranie formularza z HTML
-var loginForm = document.querySelector(".login-form");
+const loginForm = document.querySelector(".login-form");
 
 // Obsługa zdarzenia submit formularza
 loginForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Zapobieganie domyślnej akcji formularza (odświeżenie strony)
 
-  var emailInput = loginForm.elements.email;
-  var passwordInput = loginForm.elements.password;
+  const emailInput = loginForm.elements.email;
+  const passwordInput = loginForm.elements.password;
 
   // Sprawdzenie, czy pola są uzupełnione
   if (emailInput.value === "" || passwordInput.value === "") {
     alert("Wypełnij wszystkie pola formularza.");
   } else {
     // Utworzenie obiektu z wartościami formularza
-    var formData = {
+    const formData = {
       email: emailInput.value,
       password: passwordInput.value,
     };
