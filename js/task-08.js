@@ -10,7 +10,7 @@ loginForm.addEventListener("submit", function (event) {
 
   // Sprawdzenie, czy pola są uzupełnione
   if (emailInput.value === "" || passwordInput.value === "") {
-    alert("Wypełnij wszystkie pola formularza.");
+    alert("Wypełnij ch... wszystkie pola");
   } else {
     // Utworzenie obiektu z wartościami formularza
     const formData = {

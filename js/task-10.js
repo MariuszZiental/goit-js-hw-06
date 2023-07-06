@@ -16,9 +16,9 @@ function createBoxes(amount) {
   // Usunięcie istniejących elementów
   destroyBoxes();
 
-  const size = 30;
+  let size = 30;
 
-  for (const i = 0; i < amount; i++) {
+  for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.backgroundColor = getRandomHexColor();
     box.style.width = size + "px";
@@ -35,7 +35,7 @@ function destroyBoxes() {
 
 // Obsługa zdarzenia click na przycisku Utwórz
 createButton.addEventListener("click", function () {
-  const amount = input.value;
+  const amount = parseInt(input.value);
   createBoxes(amount);
 });
 

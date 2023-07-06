@@ -3,7 +3,7 @@ const incrementButton = document.querySelector('[data-action="increment"]');
 const counterValueElement = document.getElementById("value");
 
 // Inicjalizacja wartości licznika
-const counterValue = 0;
+let counterValue = 0;
 
 // Aktualizacja interfejsu wartości licznika
 function updateCounterValue() {
